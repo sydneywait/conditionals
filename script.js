@@ -134,31 +134,123 @@ console.log("This is exercise 6:")
 
 var grade = 65;
 
-if (grade >= 70 && grade <=76){
+if (grade >= 70 && grade <= 76) {
     console.log("You got a D")
-}else if (grade >= 77 && grade <=84){
+} else if (grade >= 77 && grade <= 84) {
     console.log("You got a C")
 
-}else if (grade >= 85 && grade <=92){
+} else if (grade >= 85 && grade <= 92) {
     console.log("You got a B")
 
-}else if (grade >= 93 && grade <=100){
+} else if (grade >= 93 && grade <= 100) {
     console.log("You got a A")
 }
 else {
     console.log("You are failing at life!")
 }
-    
 
-// this is an addition to exercise 6  Have a matrix of student grades to report
 
-var gradeObject ={
+// this is an addition to exercise 6  Have a matrix of student grades to report:
 
-    Sydney: 98,
-    Isaac: 95,
-    Thomas: 75,
-    George: 78
+// var sydneyObject ={
+//     name: "Sydney",
+//     grade: 95
+// }
 
+// var thomasObject ={
+//     name: "Thomas",
+//     grade: 98
+// }
+
+// var isaacObject ={
+//      name: "Isaac",
+//      grade: 45
+// }
+
+// var georgeObject = {
+//     name: "George",
+//     grade:78
+// }
+
+var gradeArray = [
+    {
+        name: "Sydney",
+        grade: 95
+    },
+    {
+        name: "Thomas",
+        grade: 98
+    },
+
+    {
+        name: "Isaac",
+        grade: 45
+    },
+    {
+        name: "George",
+        grade: 78
+    }]
+
+var i = 0;
+
+while (i <= 3) {
+
+    if (gradeArray[i].grade >= 70 && grade <= 76) {
+        console.log("You got a D")
+        var langString = `${gradeArray[i].name}, you are getting a D!`
+        document.querySelector("#sydney-grade").innerHTML = langString;
+
+    } else if (gradeArray[i].grade >= 77 && grade <= 84) {
+        console.log("You got a C")
+        var langString = `${gradeArray[i].name}, you are getting a C!`
+        document.querySelector("#sydney-grade").innerHTML = langString;
+
+    } else if (gradeArray[i].grade >= 85 && grade <= 92) {
+        console.log("You got a B")
+        var langString = `${gradeArray[i].name}, you are getting a B!`
+        document.querySelector("#sydney-grade").innerHTML = langString;
+
+    } else if (gradeArray[i].grade >= 93 && grade <= 100) {
+        console.log("You got an A")
+        var langString = `${gradeArray[i].name}, you are getting an A!`
+        document.querySelector("#sydney-grade").innerHTML = langString;
+    }
+    else {
+        console.log("You are failing at life!")
+        var langString = `${gradeArray[i].name}, you are failing!`
+        document.querySelector("#sydney-grade").innerHTML = langString;
+        i++;
+    }
 }
+
+// if (isaacObject.grade >= 70 && grade <=76){
+//     console.log("You got a D")
+//     var langString = `${isaacObject.name}, you are getting a D!`
+//     document.querySelector("#isaac-grade").innerHTML = langString;
+
+// }else if (isaacObject.grade >= 77 && grade <=84){
+//     console.log("You got a C")
+//     var langString = `${isaacObject.name}, you are getting a C!`
+//     document.querySelector("#isaac-grade").innerHTML = langString;
+
+// }else if (isaacObject.grade >= 85 && grade <=92){
+//     console.log("You got a B")
+//     var langString = `${isaacObject.name}, you are getting a B!`
+//     document.querySelector("#isaac-grade").innerHTML = langString;
+
+// }else if (isaacObject.grade >= 93 && grade <=100){
+//     console.log("You got an A")
+//     var langString = `${isaacObject.name}, you are getting an A!`
+//     document.querySelector("#isaac-grade").innerHTML = langString;
+// }
+// else {
+//     console.log("You are failing at life!")
+//     var langString = `${isaacObject.name}, you are failing!`
+//     document.querySelector("#isaac-grade").innerHTML = langString;
+// }
+
+
+
+
 
 
